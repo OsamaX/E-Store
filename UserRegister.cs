@@ -25,10 +25,6 @@ namespace WindowsFormsApplication8
         }
 
 
-        /*public UserRegister(string uname, string pass) {
-            this.username = uname;
-            this.password = pass;
-        }*/
     }
 
     public class Admin : UserRegister {

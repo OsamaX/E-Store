@@ -65,6 +65,7 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel3.SuspendLayout();
@@ -77,6 +78,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -87,7 +89,7 @@
             this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(24, 12);
+            this.panel1.Location = new System.Drawing.Point(14, 8);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(251, 255);
             this.panel1.TabIndex = 0;
@@ -158,7 +160,7 @@
             this.panel3.Controls.Add(this.pictureBox3);
             this.panel3.Controls.Add(this.label6);
             this.panel3.Controls.Add(this.button3);
-            this.panel3.Location = new System.Drawing.Point(589, 12);
+            this.panel3.Location = new System.Drawing.Point(579, 8);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(251, 255);
             this.panel3.TabIndex = 1;
@@ -218,7 +220,7 @@
             this.panel4.Controls.Add(this.pictureBox6);
             this.panel4.Controls.Add(this.label9);
             this.panel4.Controls.Add(this.button6);
-            this.panel4.Location = new System.Drawing.Point(589, 273);
+            this.panel4.Location = new System.Drawing.Point(579, 269);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(251, 255);
             this.panel4.TabIndex = 4;
@@ -290,7 +292,7 @@
             this.panel5.Controls.Add(this.pictureBox5);
             this.panel5.Controls.Add(this.label8);
             this.panel5.Controls.Add(this.button5);
-            this.panel5.Location = new System.Drawing.Point(308, 273);
+            this.panel5.Location = new System.Drawing.Point(298, 269);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(251, 255);
             this.panel5.TabIndex = 3;
@@ -362,7 +364,7 @@
             this.panel6.Controls.Add(this.pictureBox4);
             this.panel6.Controls.Add(this.label7);
             this.panel6.Controls.Add(this.button4);
-            this.panel6.Location = new System.Drawing.Point(24, 273);
+            this.panel6.Location = new System.Drawing.Point(14, 269);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(251, 255);
             this.panel6.TabIndex = 2;
@@ -436,7 +438,7 @@
             this.panel2.Controls.Add(this.pictureBox2);
             this.panel2.Controls.Add(this.label5);
             this.panel2.Controls.Add(this.label4);
-            this.panel2.Location = new System.Drawing.Point(308, 12);
+            this.panel2.Location = new System.Drawing.Point(298, 8);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(251, 255);
             this.panel2.TabIndex = 1;
@@ -508,12 +510,25 @@
             this.label4.Size = new System.Drawing.Size(0, 28);
             this.label4.TabIndex = 6;
             // 
+            // pictureBox8
+            // 
+            this.pictureBox8.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox8.Image = global::WindowsFormsApplication8.Properties.Resources.back;
+            this.pictureBox8.Location = new System.Drawing.Point(836, 4);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(46, 34);
+            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox8.TabIndex = 20;
+            this.pictureBox8.TabStop = false;
+            this.pictureBox8.Click += new System.EventHandler(this.pictureBox8_Click);
+            // 
             // Products
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(857, 529);
+            this.ClientSize = new System.Drawing.Size(883, 523);
+            this.Controls.Add(this.pictureBox8);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel3);
@@ -541,6 +556,7 @@
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -583,5 +599,6 @@
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.PictureBox pictureBox8;
     }
 }

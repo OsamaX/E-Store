@@ -27,9 +27,16 @@ namespace WindowsFormsApplication8
 
         }
 
+        private void pictureBox8_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            var home = new Form1();
+            home.Closed += (s, args) => this.Close();
+            home.Show();
+        }
+
         private void pictureBox7_Click(object sender, EventArgs e)
         {
-
         }
     }
 }
